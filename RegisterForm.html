@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+   <title>Registration Form Demo </title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="important words of webpage">
+        <meta name="description" content="short note regagarding webpage">
+        <meta name="author" content="Author name">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            
+        </style>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form action="Success.html" onsubmit="return validateForm()" novalidate>
+<table>
+    <tr><td><label for="fname">First Name: </label></td><td><input type="text" id="fname" name="name" onblur="validate1()" pattern="[A-Za-z]*"></td>
+</tr>
+    <tr><td></td><td id="error1"></td></tr>
+    <tr><td><label for="age">Enter Age : </label></td><td><input type="number" id="age" name="age" onblur="validate2()"></td></tr> 
+    <tr><td></td><td id="error2"></td></tr>
+    <tr><td><label for="mailid">Email ID: </label></td><td><input type="email" id="mailid" name="email" onblur="validate3()"></td></tr>
+    <tr><td></td><td id="error3"></td></tr>
+    <tr><td><label for="pass">Password : </label></td><td><input type="password" id="pass1" name="pass" onblur="validate4()"></td></tr>
+    <tr><td></td><td id="error4"></td></tr>
+    <tr><td><label for="pass">Confirm Password : </label></td><td><input type="password" id="c_pass" name="pass" onblur="validate5()"></td></tr>
+    <tr><td></td><td id="error5"></td></tr>
+    <tr><td></td><td><input type="checkbox" id="check" onchange="showpass()"><label for="pass">Show Password : </label></td></tr>
+    
+    <tr><td><input type="submit" value="Register">&nbsp;<input type="reset" value="Reset"></td>
+        <td></td>
+    </tr>
+</table>
+</form>
+<script src="Validation.js"></script>
+</body>
+</html>

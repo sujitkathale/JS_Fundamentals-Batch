@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Demo</h1>
+      <img src="./image/a1.jpg" id="slides" height="200px" width="200px" />
+    </div>
+    <script>
+      let arr = [
+        "./image/a2.jpg",
+        "./image/a3.jpg",
+        "./image/a4.jpg",
+        "./image/a5.jpg",
+      ];
+      var c = 0;
+      function interval() {
+        let image = document.getElementById("slides");
+        image.src = arr[c];
+        c++;
+        if (c == 4) {
+          c = 0;
+        }
+      }
+      setInterval(interval, 3000);
+    </script>
+  </body>
+</html>
